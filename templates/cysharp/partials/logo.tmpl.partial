@@ -2,7 +2,12 @@
 
 <div class="navbar-brand">
   <a href="{{_rel}}">
+    {{#_appLogoPath}}
+    <img id="logo" src="{{_rel}}{{_appLogoPath}}" alt="{{_appName}}" >
+    {{/_appLogoPath}}
+    {{^_appLogoPath}}
     <img id="logo" src="{{_rel}}img/Icon.png" alt="{{_appName}}" >
+    {{/_appLogoPath}}
     <span>{{_appTitle}}</span>
   </a>
 </div>
